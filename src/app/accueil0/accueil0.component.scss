@@ -1,0 +1,102 @@
+BODY {
+    background: #18226d;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Varela Round', sans-serif;
+    height: 100%;
+  
+       
+        }
+  
+  canvas {
+    height: 100vh;
+    z-index: -10;
+    position: fixed;
+    top: 0px;
+    
+  }
+  
+ 
+  
+  h1 {
+    color: rgb(118, 123, 199);
+    padding-bottom: 0px;
+    margin-bottom: 1%;
+    font-size: 4rem;
+  }
+  
+  h2 {
+    color: #756e92;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .logo {
+    font-family: 'Monoton', cursive;
+    color: rgb(253, 253, 253);
+    font-size: 4rem;
+  }
+  
+  
+  .top {
+    padding-bottom: 5rem;
+  }
+  
+ 
+  button{
+   
+    font-size: 18px;
+    line-height: 28px;
+    padding: 8px 16px;
+    width: 11%;
+    min-height: 46px;
+    border: unset;
+    border-radius: 4px;
+  background-color:   #717db6;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+              rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+              rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, 
+              rgb(84, 105, 212) 0px 0px 0px 1px, 
+              rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+              rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+              rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+  color: rgb(219, 217, 223);
+ 
+  cursor: pointer;
+  
+
+  
+  
+  
+  
+  /* Mobile first queries */
+  
+  
+  /* Larger than mobile */
+  
+  @media (min-width: 400px) {}
+  
+  
+  /* Larger than phablet */
+  
+  @media (min-width: 550px) {}
+  
+  
+  /* Larger than tablet */
+  
+  @media (min-width: 750px) {}
+  
+  
+  /* Larger than desktop */
+  
+  @media (min-width: 1000px) {}
+  
+  
+  /* Larger than Desktop HD */
+  
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 4rem;
+    }
+  }}

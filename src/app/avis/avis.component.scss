@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+
+  
+  h1 {
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: 0.15rem;
+    padding-bottom: 0px;
+    margin-bottom: 1%;
+    font-size: 30px;
+  }
+  
+  h2 {
+    font-family: 'Cutive Mono', 'Courier New';
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 4rem;
+  }
+  
+  label {
+    cursor: pointer;
+  }
+  
+  svg {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.15rem;
+  }
+  
+  
+  /* hide radio buttons */
+  
+  input[name="star"] {
+    display: inline-block;
+    width: 0;
+    opacity: 0;
+    margin-left: -2px;
+  }
+  
+  /* hide source svg */
+  
+  .star-source {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  
+  
+  /* set initial color to transparent so fill is empty*/
+  
+  .star {
+    color: transparent;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  
+  /* set direction to row-reverse so 5th star is at the end and ~ can be used to fill all sibling stars that precede last starred element*/
+  
+  .star-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  
+  label:hover ~ label .star,
+  svg.star:hover,
+  input[name="star"]:focus ~ label .star,
+  input[name="star"]:checked ~ label .star {
+    color: #534c91;
+  }
+  #close {
+	border: none;
+	background: transparent;
+	outline: none;
+	position: absolute;
+	right: baseSpacing/2;
+	top: baseSpacing/2;
+}
+
+  input[name="star"]:checked + label .star {
+    animation: starred 0.5s;
+  }
+  
+  input[name="star"]:checked + label {
+    animation: scaleup 1s;
+  }
+  
+  @keyframes scaleup {
+    from {
+      transform: scale(1.2);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes starred {
+    from {
+      color: #600040;
+    }
+    to {
+      color: #d62a9d;
+    }
+    
+  }.card-body{
+    margin: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 550px;
+height: 400px;}
+    button {
+
+        margin:5px;
+          font-size: 19px;
+          line-height: 25px;
+          padding: 8px 16px;
+          width: 19%;
+          min-height: 19px;
+          border: unset;
+          border-radius: 4px;
+        background-color: rgb(111, 122, 175);
+        box-shadow: rgba(192, 192, 192, 0) 0px 0px 0px 0px, 
+                    rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                    rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, 
+                    rgb(84, 105, 212) 0px 0px 0px 1px, 
+                    rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                    rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                    rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+        color: rgb(219, 217, 223);
+        font-weight: 00;
+        cursor: pointer;
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;}
+        h5{
+            color: rgb(90, 65, 158);
+          padding: 40px;
+          font-size: 28px;
+          margin: auto;
+          text-align: center;
+          }
+  
